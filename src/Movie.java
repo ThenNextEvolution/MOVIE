@@ -4,45 +4,47 @@ import java.sql.Array;
 import java.text.DecimalFormat;
 import java.util.*;
 
-public class Main {
-    static void sort(int[] array, int lowindex, int highIndex){
-        if(lowindex>=highIndex){
-            return;
-        }
-
-        int pivot = array[highIndex];
-        int leftp = lowindex;
-        int rightp =highIndex;
-
-        //sort the array each run
-        while(leftp<rightp){
-            while (array[leftp]<= pivot && leftp<rightp){
-                leftp++;
-            }
-            while (array[rightp]>= pivot && leftp<rightp){
-                rightp--;
-            }
-
-            swap(array, leftp,rightp);
-
-        }
-
-        //swap the pivot with the meet index
-        swap(array, leftp, highIndex);
-
-        //sort left side
-        sort(array,lowindex,leftp-1);
-
-        //sort right side
-        sort(array,leftp,highIndex);
-    }
-
-    private static void swap(int[] array,int index1, int index2){
-        int temp = array[index1];
-        array[index1] =array[index2];
-        array[index2]=temp;
-
-    }
+//public class Sorted {
+//    static void sort(List<Movie> array, int lowindex, int highIndex){
+//        if(lowindex>=highIndex){
+//            return;
+//        }
+//
+//        Movie pivot = array.get(highIndex);
+//         int leftp = lowindex;
+//        int rightp =highIndex;
+//
+//        //sort the array each run
+//        while(leftp<rightp){
+//            while (array.get[leftp]<= pivot && leftp<rightp){
+//                leftp++;
+//            }
+//            while (array.get[rightp]>= pivot && leftp<rightp){
+//                rightp--;
+//            }
+//
+//            swap(array, leftp,rightp);
+//
+//        }
+//
+//        //swap the pivot with the meet index
+//        swap(array, leftp, highIndex);
+//
+//        //sort left side
+//        sort(array,lowindex,leftp-1);
+//
+//        //sort right side
+//        sort(array,leftp,highIndex);
+//    }
+//
+//    private static void swap(List<Movie> array,int index1, int index2){
+//        Movie temp = array.get(index1);
+//        Movie temp2 = array.get(index2);
+//        array.set(index1,temp2);
+//        array.set(index2,temp);
+//
+//
+//    }
 
 
 
@@ -79,6 +81,10 @@ public class Movie{
 
     public void setYear(Integer year) {
         this.year = year;
+    }
+
+    public Integer getYear() {
+        return year;
     }
 
     public Integer getMovid() {
@@ -131,6 +137,10 @@ public class Movie{
 
     public static void searchyear() throws FileNotFoundException {
         List<Movie> fo = create();
+        sorted sor = new sorted();
+        sorted.sort(fo,0, fo.size()-1);
+
+
 
     }
 
@@ -167,6 +177,11 @@ public class Movie{
                 }}
 
         List<Movie> fo = create();
+        for (Movie o : fo) {
+            o.print(o);
+
+        }
+        searchyear();
         for (Movie o : fo) {
             o.print(o);
 
