@@ -142,9 +142,9 @@ public class Movie{
 
         for (Movie o : sortmov) {
             o.print(o);
-
+            System.out.println(o.movname);
         }
-
+        System.out.println(" you ");
 
 
 
@@ -157,30 +157,30 @@ public class Movie{
 
     //ArrayList<T> movid,
     public static void main(String[] args) throws FileNotFoundException {
-            System.out.println("Hello world!");
-       // ArrayList<> hold =new ArrayList<ArrayList>();
-        //Movie c = new Movie(1,"ghost",2024);
-        //c.print(c);
-
-        File names = new File("names.log");
-        File ids = new File("ids.log");
-        File years = new File("year.log");
-
-        System.out.println(names.exists());
-
-        Scanner sc2 = new Scanner(ids);
-        Scanner sc3 = new Scanner(years);
-        Scanner sc = new Scanner(names);
-
-
-        while (sc.hasNextLine()){
-            //Movie c = new Movie(sc2.nextLine(),"ghost",2024);c.print(c);
-            if (!Objects.equals(sc.nextLine(), "")){
-                String name = sc.nextLine();
-
-                Movie   c  = new Movie(sc2.nextInt(),sc.nextLine(), sc3.nextInt());c.print(c);
-                //System.out.println(sc.nextLine()+"v"+sc2.nextInt()+"v"+sc3.nextInt());
-                }}
+//            System.out.println("Hello world!");
+//       // ArrayList<> hold =new ArrayList<ArrayList>();
+//        //Movie c = new Movie(1,"ghost",2024);
+//        //c.print(c);
+//
+//        File names = new File("names.log");
+//        File ids = new File("ids.log");
+//        File years = new File("year.log");
+//
+//        System.out.println(names.exists());
+//
+//        Scanner sc2 = new Scanner(ids);
+//        Scanner sc3 = new Scanner(years);
+//        Scanner sc = new Scanner(names);
+//
+//
+//        while (sc.hasNextLine()){
+//            //Movie c = new Movie(sc2.nextLine(),"ghost",2024);c.print(c);
+//            if (!Objects.equals(sc.nextLine(), "")){
+//                String name = sc.nextLine();
+//
+//                Movie   c  = new Movie(sc2.nextInt(),sc.nextLine(), sc3.nextInt());c.print(c);
+//                //System.out.println(sc.nextLine()+"v"+sc2.nextInt()+"v"+sc3.nextInt());
+//                }}
 
 //        List<Movie> fo = create();
 //        for (Movie o : fo) {

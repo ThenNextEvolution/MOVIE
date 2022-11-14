@@ -19,30 +19,32 @@ public class sorted {
             while (array.get(rightp).year>= pivot && leftp<rightp){
                 rightp--;
             }
-
+           // System.out.println(leftp+" you1 "+highIndex);
             swap(array, leftp,rightp);
 
         }
 
         //swap the pivot with the meet index
+        //System.out.println(leftp+" you "+highIndex);
         swap(array, leftp, highIndex);
-
+        System.out.println(lowindex+" yooo "+highIndex);
         //sort left side
         sort(array,lowindex,leftp-1);
 
         //sort right side
         sort(array,leftp,highIndex);
+
         return array;
     }
 
     private static void swap(List<Movie> array, int index1, int index2){
-        //System.out.println();
-        System.out.println(array.get(index1).movname+"."+array.get(index2).movname);
+       // System.out.println(index1+"pp"+index2);
+       // System.out.println(array.get(index1).movname+"."+array.get(index2).movname);
         Movie temp = array.get(index1);
         Movie temp2 = array.get(index2);
         array.set(index1,temp2);
         array.set(index2,temp);
-        System.out.println(array.get(index1).movname+"..."+array.get(index2).movname);
+        //System.out.println(array.get(index1).movname+"..."+array.get(index2).movname);
 
 
     }}
