@@ -50,7 +50,7 @@ public class Movie{
         return movid;
     }
     public void print(Movie movie){
-       // System.out.print(movie.movid+" name: "+movie.movname+" rate: "+movie.movrate+" year:"+movie.year+" views:"+movie.views);
+        System.out.println(movie.movid+" name: "+movie.movname+" rate: "+movie.movrate+" year:"+movie.year+" views:"+movie.views);
         //System.out.println();
 
     }
@@ -59,7 +59,7 @@ public class Movie{
         File ids = new File("ids.log");
         File years = new File("year.log");
 
-        System.out.println(names.exists());
+        //System.out.println(names.exists());
 
         Scanner sc2 = new Scanner(ids);
         Scanner sc3 = new Scanner(years);
@@ -67,10 +67,12 @@ public class Movie{
 
 
         List<Movie> hold = new ArrayList<>();
-        while (sc.hasNextLine()) {
+        //System.out.println(sc.nextLine());
+        //sc.
+        while (sc.hasNext()) {
             //Movie c = new Movie(sc2.nextLine(),"ghost",2024);c.print(c);
-            if (!Objects.equals(sc.nextLine(), "")) {
-                String name = sc.nextLine();
+            if (!Objects.equals(sc.nextLine(), null)) {
+                //String name = sc.nextLine();
                 //hold = new List<Movie>();
 
                 Movie c = new Movie(sc2.nextInt(), sc.nextLine(), sc3.nextInt());
@@ -96,12 +98,18 @@ public class Movie{
 
     public static void searchyear() throws FileNotFoundException {
         List<Movie> fo = create();
+        for (Movie o : fo) {
+            o.print(o);
+            //System.out.println(o.movname);
+        }
+        System.out.println(" orginal");
         sorted sor = new sorted();
         List<Movie> sortmov = sorted.sort(fo,0, fo.size()-1);
 
+
         for (Movie o : sortmov) {
             o.print(o);
-            System.out.println(o.movname);
+            //System.out.println(o.movname);
         }
         System.out.println(" you ");
 

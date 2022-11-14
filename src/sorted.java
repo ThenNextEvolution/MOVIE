@@ -3,6 +3,13 @@ import java.util.List;
 
 public class sorted {
     static List<Movie> sort(List<Movie> array, int lowindex, int highIndex){
+//
+//        System.out.println(" orginal");
+//        for (Movie o : array) {
+//            o.print(o);
+//            System.out.println(o.movname);
+//        }
+//        System.out.println(" orginal");
         if(lowindex>=highIndex){
             return array;
         }
@@ -27,7 +34,7 @@ public class sorted {
         //swap the pivot with the meet index
         //System.out.println(leftp+" you "+highIndex);
         swap(array, leftp, highIndex);
-        System.out.println(lowindex+" yooo "+highIndex);
+        //System.out.println(lowindex+" yooo "+highIndex);
         //sort left side
         sort(array,lowindex,leftp-1);
 

@@ -1,0 +1,34 @@
+11198330 name:  Andor rate: 2.02 year:2022 views:973135
+1016150 name:  Game of Thrones rate: 9.31 year:2022 views:27738
+9253284 name:  Enola Holmes 2 rate: 1.8 year:2022 views:337521
+6443346 name:  The Bastard Son & The Devil Himself rate: 0.78 year:2022 views:270752
+1630029 name:  Tales of the Jedi rate: 5.21 year:2022 views:632609
+944947 name:  Titans rate: 0.78 year:2011 views:239681
+7631058 name:  Gangs of London rate: 0.56 year:2022 views:250396
+9114286 name:  Everything Everywhere All at Once rate: 9.51 year:2022 views:176683
+14641788 name:  Kantara rate: 7.4 year:2022 views:135767
+2935622 name:  She-Hulk: Attorney at Law rate: 9.65 year:2022 views:319298
+5180504 name:  The Northman rate: 3.63 year:2019 views:25091
+13649396 name:  The Last Kingdom rate: 6.84 year:2022 views:470261
+12593682 name:  The Winchesters rate: 2.92 year:2022 views:179777
+8093700 name:  Cobra Kai rate: 0.79 year:2022 views:108305
+20723374 name:  The Mandalorian rate: 9.54 year:2022 views:33272
+1745960 name:  Attack on Titan rate: 9.7 year:2022 views:771438
+1190634 name:  rate: 4.5 year:2019 views:678787
+944947 name:  Titans rate: 0.78 year:2011 views:239681
+1190634 name:  rate: 4.5 year:2019 views:678787
+5180504 name:  The Northman rate: 3.63 year:2019 views:25091
+6443346 name:  The Bastard Son & The Devil Himself rate: 0.78 year:2022 views:270752
+1630029 name:  Tales of the Jedi rate: 5.21 year:2022 views:632609
+11198330 name:  Andor rate: 2.02 year:2022 views:973135
+7631058 name:  Gangs of London rate: 0.56 year:2022 views:250396
+9114286 name:  Everything Everywhere All at Once rate: 9.51 year:2022 views:176683
+14641788 name:  Kantara rate: 7.4 year:2022 views:135767
+2935622 name:  She-Hulk: Attorney at Law rate: 9.65 year:2022 views:319298
+9253284 name:  Enola Holmes 2 rate: 1.8 year:2022 views:337521
+13649396 name:  The Last Kingdom rate: 6.84 year:2022 views:470261
+12593682 name:  The Winchesters rate: 2.92 year:2022 views:179777
+8093700 name:  Cobra Kai rate: 0.79 year:2022 views:108305
+20723374 name:  The Mandalorian rate: 9.54 year:2022 views:33272
+1745960 name:  Attack on Titan rate: 9.7 year:2022 views:771438
+1016150 name:  Game of Thrones rate: 9.31 year:2022 views:27738
