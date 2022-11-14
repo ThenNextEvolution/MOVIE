@@ -1,0 +1,11 @@
+for (let index = 1; index <51; index++) {
+     var link = document.querySelector(`#main > div > div.lister.list.detail.sub-list > div > div:nth-child(${index}) > div.lister-item-content > h3 > a`).href.toString();
+
+    var id = link.substring(link.search("/tt")+3,link.search("ref")-2);
+
+    var year = document.querySelector(`#main > div > div.lister.list.detail.sub-list > div > div:nth-child(${index}) > div.lister-item-content > h3 > span.lister-item-year.text-muted.unbold`).innerText;
+
+    var title = document.querySelector(`#main > div > div.lister.list.detail.sub-list > div > div:nth-child(${index}) > div.lister-item-content > h3 > a`).innerText;
+
+    console.log(year);
+}
