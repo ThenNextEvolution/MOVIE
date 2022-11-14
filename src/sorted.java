@@ -1,9 +1,10 @@
+import java.lang.reflect.Array;
 import java.util.List;
 
 public class sorted {
-    static void sort(List<Movie> array, int lowindex, int highIndex){
+    static List<Movie> sort(List<Movie> array, int lowindex, int highIndex){
         if(lowindex>=highIndex){
-            return;
+            return array;
         }
 
         Integer pivot = array.get(highIndex).year;
@@ -31,13 +32,17 @@ public class sorted {
 
         //sort right side
         sort(array,leftp,highIndex);
+        return array;
     }
 
     private static void swap(List<Movie> array, int index1, int index2){
+        //System.out.println();
+        System.out.println(array.get(index1).movname+"."+array.get(index2).movname);
         Movie temp = array.get(index1);
         Movie temp2 = array.get(index2);
         array.set(index1,temp2);
         array.set(index2,temp);
+        System.out.println(array.get(index1).movname+"..."+array.get(index2).movname);
 
 
     }}

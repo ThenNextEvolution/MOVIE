@@ -91,14 +91,14 @@ public class Movie{
         return movid;
     }
     public void print(Movie movie){
-        System.out.print(movie.movid+" name: "+movie.movname+" rate: "+movie.movrate+" year:"+movie.year+" views:"+movie.views);
-        System.out.println();
+       // System.out.print(movie.movid+" name: "+movie.movname+" rate: "+movie.movrate+" year:"+movie.year+" views:"+movie.views);
+        //System.out.println();
 
     }
     public static List<Movie> create() throws FileNotFoundException {
-        File names = new File("C:\\Users\\eyita\\Downloads\\names.log");
-        File ids = new File("C:\\Users\\eyita\\Downloads\\ids.log");
-        File years = new File("C:\\Users\\eyita\\Downloads\\year.log");
+        File names = new File("names.log");
+        File ids = new File("ids.log");
+        File years = new File("year.log");
 
         System.out.println(names.exists());
 
@@ -138,7 +138,13 @@ public class Movie{
     public static void searchyear() throws FileNotFoundException {
         List<Movie> fo = create();
         sorted sor = new sorted();
-        sorted.sort(fo,0, fo.size()-1);
+        List<Movie> sortmov = sorted.sort(fo,0, fo.size()-1);
+
+        for (Movie o : sortmov) {
+            o.print(o);
+
+        }
+
 
 
 
@@ -156,9 +162,9 @@ public class Movie{
         //Movie c = new Movie(1,"ghost",2024);
         //c.print(c);
 
-        File names = new File("C:\\Users\\eyita\\Downloads\\names.log");
-        File ids = new File("C:\\Users\\eyita\\Downloads\\ids.log");
-        File years = new File("C:\\Users\\eyita\\Downloads\\year.log");
+        File names = new File("names.log");
+        File ids = new File("ids.log");
+        File years = new File("year.log");
 
         System.out.println(names.exists());
 
@@ -176,16 +182,13 @@ public class Movie{
                 //System.out.println(sc.nextLine()+"v"+sc2.nextInt()+"v"+sc3.nextInt());
                 }}
 
-        List<Movie> fo = create();
-        for (Movie o : fo) {
-            o.print(o);
-
-        }
+//        List<Movie> fo = create();
+//        for (Movie o : fo) {
+//            o.print(o);
+//
+//        }
         searchyear();
-        for (Movie o : fo) {
-            o.print(o);
 
-        }
 
         //for (item:fo){
 
