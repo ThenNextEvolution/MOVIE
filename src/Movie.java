@@ -7,14 +7,14 @@ import java.util.*;
 
 
 
-public class Movie{
+public class Movie{ //MOvie class
     String movname;
     Integer movid,year,views;
     double movrate;
     public static final DecimalFormat df1 = new DecimalFormat( "#.##" );
 
     public Movie(Integer id, String name, Integer year){
-        setMovname(name);
+        setMovname(name);//movie id, name, year, rate, views
         setMovid(id);
 
         setYear(year);
@@ -49,12 +49,12 @@ public class Movie{
     public Integer getMovid() {
         return movid;
     }
-    public void print(Movie movie){
+    public void print(Movie movie){// get the movies in a array of movies, print all info
         System.out.println(movie.movid+" name: "+movie.movname+" rate: "+movie.movrate+" year:"+movie.year+" views:"+movie.views);
         //System.out.println();
 
     }
-    public static List<Movie> create() throws FileNotFoundException {
+    public static List<Movie> create() throws FileNotFoundException {// creates new list of movies based on log files
         File names = new File("names.log");
         File ids = new File("ids.log");
         File years = new File("year.log");
@@ -86,17 +86,17 @@ public class Movie{
         return hold;
     }
 
-    public static Object[] readdate(List<Movie> sent){
+    public static Object[] readdate(List<Movie> sent){//return arrayofmovies
         Object[] mov =  sent.toArray();
         System.out.println(Arrays.toString(mov));
 
         return mov;
     }
 
-    public List readdatelist(List<Movie> sent) throws FileNotFoundException {
+    public List readdatelist(List<Movie> sent) throws FileNotFoundException { // return list of movies
        return sent;}
 
-    public static void compyear() throws FileNotFoundException {
+    public static void compyear() throws FileNotFoundException { //sort list by year
         List<Movie> fo = create();
         for (Movie o : fo) {
             o.print(o);
@@ -116,7 +116,7 @@ public class Movie{
 
 
     }
-    public static void comprate() throws FileNotFoundException {
+    public static void comprate() throws FileNotFoundException {// sorts list by rate
         List<Movie> fo = create();
         for (Movie o : fo) {
             o.print(o);
@@ -134,7 +134,7 @@ public class Movie{
         System.out.println(" you ");
 
     }
-    public static List<Movie> searchrate(List<Movie> rec,double s){
+    public static List<Movie> searchrate(List<Movie> rec,double s){// search list for movies close to rating s
         List<Movie> hold = new ArrayList<>();
         for (Movie mov:rec) {
             if (mov.movrate<= s+1.0 && mov.movrate>= s-1.0){
@@ -143,12 +143,19 @@ public class Movie{
         }
         return hold;
     };
-    public static List<Movie> searchyear(List<Movie> rec,double s){
+    public static List<Movie> searchyear(List<Movie> rec,double s){// search list by year
         List<Movie> hold = new ArrayList<>();
         for (Movie mov:rec) {
-            if (mov.year<= s+1.0 && mov.year>= s-1.0){
+            if (mov.year<= s+1 && mov.year>= s-1){
                 hold.add(mov);
             };
+        }
+        return hold;
+    };
+    public static List<Movie> sea(List<Movie> rec){//get movie id
+        List<Movie> hold = new ArrayList<>();
+        for (Movie mov:rec) {
+            System.out.println(mov.movid);
         }
         return hold;
     };
@@ -164,11 +171,12 @@ public class Movie{
         //compyear();
         //comprate();
         //searchrate(create(),1.0);
-        System.out.println("com");
-        for (Movie o : searchrate(create(),1.0)) {
-            o.print(o);
-            System.out.println("com");
-        }
+//        System.out.println("com");
+//        for (Movie o : searchrate(create(),1.0)) {
+//            o.print(o);
+//            System.out.println("com");
+//        }
+        //sea(create());
 
 
         //for (item:fo){
