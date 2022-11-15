@@ -1,34 +1,50 @@
-11198330 name:  Andor rate: 2.02 year:2022 views:973135
-1016150 name:  Game of Thrones rate: 9.31 year:2022 views:27738
-9253284 name:  Enola Holmes 2 rate: 1.8 year:2022 views:337521
-6443346 name:  The Bastard Son & The Devil Himself rate: 0.78 year:2022 views:270752
-1630029 name:  Tales of the Jedi rate: 5.21 year:2022 views:632609
-944947 name:  Titans rate: 0.78 year:2011 views:239681
-7631058 name:  Gangs of London rate: 0.56 year:2022 views:250396
-9114286 name:  Everything Everywhere All at Once rate: 9.51 year:2022 views:176683
-14641788 name:  Kantara rate: 7.4 year:2022 views:135767
-2935622 name:  She-Hulk: Attorney at Law rate: 9.65 year:2022 views:319298
-5180504 name:  The Northman rate: 3.63 year:2019 views:25091
-13649396 name:  The Last Kingdom rate: 6.84 year:2022 views:470261
-12593682 name:  The Winchesters rate: 2.92 year:2022 views:179777
-8093700 name:  Cobra Kai rate: 0.79 year:2022 views:108305
-20723374 name:  The Mandalorian rate: 9.54 year:2022 views:33272
-1745960 name:  Attack on Titan rate: 9.7 year:2022 views:771438
-1190634 name:  rate: 4.5 year:2019 views:678787
-944947 name:  Titans rate: 0.78 year:2011 views:239681
-1190634 name:  rate: 4.5 year:2019 views:678787
-5180504 name:  The Northman rate: 3.63 year:2019 views:25091
-6443346 name:  The Bastard Son & The Devil Himself rate: 0.78 year:2022 views:270752
-1630029 name:  Tales of the Jedi rate: 5.21 year:2022 views:632609
-11198330 name:  Andor rate: 2.02 year:2022 views:973135
-7631058 name:  Gangs of London rate: 0.56 year:2022 views:250396
-9114286 name:  Everything Everywhere All at Once rate: 9.51 year:2022 views:176683
-14641788 name:  Kantara rate: 7.4 year:2022 views:135767
-2935622 name:  She-Hulk: Attorney at Law rate: 9.65 year:2022 views:319298
-9253284 name:  Enola Holmes 2 rate: 1.8 year:2022 views:337521
-13649396 name:  The Last Kingdom rate: 6.84 year:2022 views:470261
-12593682 name:  The Winchesters rate: 2.92 year:2022 views:179777
-8093700 name:  Cobra Kai rate: 0.79 year:2022 views:108305
-20723374 name:  The Mandalorian rate: 9.54 year:2022 views:33272
-1745960 name:  Attack on Titan rate: 9.7 year:2022 views:771438
-1016150 name:  Game of Thrones rate: 9.31 year:2022 views:27738
+87332 name:  Ghostbusters rate: 9.0 year:1984 views:760493
+92099 name:  Top Gun rate: 6.85 year:1986 views:419487
+118276 name:  Buffy the Vampire Slayer rate: 9.23 year:1997 views:656186
+364845 name:  NCIS rate: 7.86 year:2003 views:818893
+499549 name:  Avatar rate: 0.29 year:2009 views:777652
+944947 name:  Game of Thrones rate: 6.72 year:2011 views:540950
+2560140 name:  Attack on Titan rate: 9.8 year:2013 views:282972
+2306299 name:  Vikings rate: 1.5 year:2013 views:940009
+4179452 name:  The Last Kingdom rate: 1.29 year:2015 views:579471
+7221388 name:  Cobra Kai rate: 5.14 year:2018 views:594739
+1043813 name:  Titans rate: 1.66 year:2018 views:857313
+5057054 name:  Tom Clancy's Jack Ryan rate: 5.26 year:2018 views:787128
+7587890 name:  The Rookie rate: 0.03 year:2018 views:374046
+5180504 name:  The Witcher rate: 1.65 year:2019 views:241717
+7949218 name:  See rate: 0.6 year:2019 views:756467
+8111088 name:  The Mandalorian rate: 6.49 year:2019 views:927304
+1190634 name:  The Boys rate: 5.01 year:2019 views:55237
+9184986 name:  Barbarians rate: 3.89 year:2020 views:439645
+7846844 name:  Enola Holmes rate: 6.82 year:2020 views:764334
+7661390 name:  Gangs of London rate: 7.49 year:2020 views:357645
+13616990 name:  Chainsaw Man rate: 5.43 year:2022 views:631075
+429087 name:  Shantaram rate: 3.69 year:2022 views:75279
+12593682 name:  Bullet Train rate: 8.74 year:2022 views:466347
+6710474 name:  Everything Everywhere All at Once rate: 7.67 year:2022 views:321132
+13649396 name:  The Bastard Son & The Devil Himself rate: 0.89 year:2022 views:432721
+15318872 name:  Werewolf by Night rate: 6.59 year:2022 views:925717
+15327088 name:  Kantara rate: 3.3 year:2022 views:25568
+5645432 name:  The Old Man rate: 7.14 year:2022 views:757492
+1630029 name:  Avatar: The Way of Water rate: 2.08 year:2022 views:30686
+10857160 name:  She-Hulk: Attorney at Law rate: 2.56 year:2022 views:132542
+10648342 name:  Thor: Love and Thunder rate: 5.79 year:2022 views:877596
+1877830 name:  The Batman rate: 2.87 year:2022 views:68739
+11138512 name:  The Northman rate: 8.84 year:2022 views:584806
+18082758 name:  The Takeover rate: 9.66 year:2022 views:552702
+6443346 name:  Black Adam rate: 4.38 year:2022 views:260574
+2935622 name:  The School for Good and Evil rate: 7.48 year:2022 views:735352
+8093700 name:  The Woman King rate: 6.03 year:2022 views:472468
+9253284 name:  Andor rate: 4.45 year:2022 views:503650
+14923244 name:  The Winchesters rate: 0.87 year:2022 views:399817
+1016150 name:  All Quiet on the Western Front rate: 6.54 year:2022 views:824325
+14641788 name:  Enola Holmes 2 rate: 5.86 year:2022 views:423921
+9114286 name:  Black Panther: Wakanda Forever rate: 7.04 year:2022 views:852731
+13320622 name:  The Lost City rate: 0.99 year:2022 views:548623
+16183464 name:  One Piece Film: Red rate: 6.63 year:2022 views:981660
+1745960 name:  Top Gun: Maverick rate: 5.34 year:2022 views:423859
+11198330 name:  House of the Dragon rate: 9.9 year:2022 views:829466
+20723374 name:  Tales of the Jedi rate: 9.96 year:2022 views:365215
+7631058 name:  The Lord of the Rings: The Rings of Power rate: 5.42 year:2022 views:670685
+5108870 name:  Morbius rate: 9.47 year:2022 views:242995
+10954600 name:  Ant-Man and the Wasp: Quantumania rate: 0.01 year:2023 views:982555
