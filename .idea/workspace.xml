@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94d27dec-b9ab-4626-8a8a-bab58983b107" name="Changes" comment="test4 all2">
+    <list default="true" id="94d27dec-b9ab-4626-8a8a-bab58983b107" name="Changes" comment="fin test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Movie.java" afterDir="false" />
     </list>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668479565849</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fin test">
+      <created>1668481515760</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668481515760</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +126,7 @@
     <MESSAGE value="test3" />
     <MESSAGE value="test4 all" />
     <MESSAGE value="test4 all2" />
-    <option name="LAST_COMMIT_MESSAGE" value="test4 all2" />
+    <MESSAGE value="fin test" />
+    <option name="LAST_COMMIT_MESSAGE" value="fin test" />
   </component>
 </project>

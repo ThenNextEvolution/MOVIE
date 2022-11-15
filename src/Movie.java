@@ -1,8 +1,10 @@
-import java.io.*;
-
-import java.sql.Array;
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.text.DecimalFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Scanner;
 
 
 
@@ -70,16 +72,12 @@ public class Movie{ //MOvie class
         //System.out.println(sc.nextLine());
         //sc.
         while (sc.hasNext()) {
-            //Movie c = new Movie(sc2.nextLine(),"ghost",2024);c.print(c);
             {
-                //String name = sc.nextLine();
-                //hold = new List<Movie>();
 
                 Movie c = new Movie(sc2.nextInt(), sc.nextLine(), sc3.nextInt());
                 c.print(c);
                 hold.add(c);
 
-                //System.out.println(sc.nextLine()+"v"+sc2.nextInt()+"v"+sc3.nextInt());
             }
         }
 
@@ -100,16 +98,15 @@ public class Movie{ //MOvie class
         List<Movie> fo = create();
         for (Movie o : fo) {
             o.print(o);
-            //System.out.println(o.movname);
+
         }
         System.out.println(" orginal");
-        sorted sor = new sorted();
         List<Movie> sortmov = sorted.sort(fo,0, fo.size()-1);
 
 
         for (Movie o : sortmov) {
             o.print(o);
-            //System.out.println(o.movname);
+
         }
         System.out.println(" you ");
 
@@ -120,16 +117,15 @@ public class Movie{ //MOvie class
         List<Movie> fo = create();
         for (Movie o : fo) {
             o.print(o);
-            //System.out.println(o.movname);
+
         }
         System.out.println(" orginal");
-        sortedrate sor = new sortedrate();
         List<Movie> sortmov = sorted.sort(fo,0, fo.size()-1);
 
 
         for (Movie o : sortmov) {
             o.print(o);
-            //System.out.println(o.movname);
+
         }
         System.out.println(" you ");
 
@@ -139,10 +135,11 @@ public class Movie{ //MOvie class
         for (Movie mov:rec) {
             if (mov.movrate<= s+1.0 && mov.movrate>= s-1.0){
                 hold.add(mov);
-            };
+            }
         }
         return hold;
-    };
+    }
+
     public static List<Movie> searchyear(List<Movie> rec,int s){// search list by year
         List<Movie> hold = new ArrayList<>();
         for (Movie mov:rec) {
@@ -151,18 +148,15 @@ public class Movie{ //MOvie class
             };
         }
         return hold;
-    };
+    }
+
     public static List<Movie> sea(List<Movie> rec){//get movie id
         List<Movie> hold = new ArrayList<>();
         for (Movie mov:rec) {
             System.out.println(mov.movid);
         }
         return hold;
-    };
-
-
-
-
+    }
 
 
     //ArrayList<T> movid,
@@ -199,25 +193,16 @@ public class Movie{ //MOvie class
             }
             else if (choice == 5) {
                 break;
-            };
             }
+        }
 
 
         }
 
 
 
-        //searchrate(create(),1.0);
-//        System.out.println("com");
-//        for (Movie o : searchrate(create(),1.0)) {
-//            o.print(o);
-//            System.out.println("com");
-//        }
-        //sea(create());
-
-
-        //for (item:fo){
 
 
 
-    };
+
+    }
