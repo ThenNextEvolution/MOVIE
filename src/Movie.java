@@ -143,7 +143,7 @@ public class Movie{ //MOvie class
         }
         return hold;
     };
-    public static List<Movie> searchyear(List<Movie> rec,double s){// search list by year
+    public static List<Movie> searchyear(List<Movie> rec,int s){// search list by year
         List<Movie> hold = new ArrayList<>();
         for (Movie mov:rec) {
             if (mov.year<= s+1 && mov.year>= s-1){
@@ -167,9 +167,46 @@ public class Movie{ //MOvie class
 
     //ArrayList<T> movid,
     public static void main(String[] args) throws FileNotFoundException {
+        while (true) {
+            Scanner input = new Scanner(System.in);
+            System.out.println("What do you want?:" +
+                    "1: compare year "+
+                    "2: compare rating "+
+                    "3: compare search by rate "+
+                    "4: compare search by year "+
+                    "5: stop ")
+            ;
+            int choice = input.nextInt();
+            if (choice == 1){
+                compyear();
+            }
+            else if (choice == 2) {
+                comprate();
+            }
+            else if (choice == 3) {
+                searchrate(create(),1.0);
+                for (Movie o : searchrate(create(),1.0)) {
+                    o.print(o);
+                    System.out.println("com");
+                }
+            }
+            else if (choice == 4) {
+                searchyear(create(),1);
+                for (Movie o : searchrate(create(),1)) {
+                    o.print(o);
+                    System.out.println("com");
+                }
+            }
+            else if (choice == 5) {
+                break;
+            };
+            }
 
-        //compyear();
-        //comprate();
+
+        }
+
+
+
         //searchrate(create(),1.0);
 //        System.out.println("com");
 //        for (Movie o : searchrate(create(),1.0)) {
@@ -184,4 +221,3 @@ public class Movie{ //MOvie class
 
 
     };
-}
