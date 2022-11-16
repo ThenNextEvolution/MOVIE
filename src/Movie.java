@@ -1,3 +1,5 @@
+import org.w3c.dom.Node;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.text.DecimalFormat;
@@ -159,6 +161,8 @@ public class Movie{ //MOvie class
     }
 
 
+
+
     //ArrayList<T> movid,
     public static void main(String[] args) throws FileNotFoundException {
         while (true) {
@@ -193,6 +197,10 @@ public class Movie{ //MOvie class
             }
             else if (choice == 5) {
                 break;
+            }
+            for (Movie o : create()) {
+                o.print(o);
+                System.out.println("com");
             }
         }
 
