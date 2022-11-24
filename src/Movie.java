@@ -1,14 +1,9 @@
-import org.w3c.dom.Node;
-
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.text.DecimalFormat;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
-
-
+import java.util.*;
 
 
 public class Movie{ //MOvie class
@@ -77,7 +72,7 @@ public class Movie{ //MOvie class
             {
 
                 Movie c = new Movie(sc2.nextInt(), sc.nextLine(), sc3.nextInt());
-                c.print(c);
+                //c.print(c);
                 hold.add(c);
 
             }
@@ -85,16 +80,69 @@ public class Movie{ //MOvie class
 
         return hold;
     }
+    public static void make() throws IOException {
+        FileWriter wr = new FileWriter("list.txt");
+        List<Movie> hold = create();
+        try {
+                String v =("movid       views   movrate     year    name"+String.format("%n"));
+            wr.write(v);
+            for (Movie item:hold) {
+                String g =item.movid.toString()+"    "+item.views.toString()+"   "+ item.movrate+"      "+item.year.toString()+"     "+item.movname+String.format("%n");
+                wr.write(g,0,g.length()-1);
+                //wr.
+               // wr.flush();
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
-    public static Object[] readdate(List<Movie> sent){//return arrayofmovies
-        Object[] mov =  sent.toArray();
-        System.out.println(Arrays.toString(mov));
+        wr.flush();
+        wr.close();
 
-        return mov;
+
+
     }
 
-    public List readdatelist(List<Movie> sent) throws FileNotFoundException { // return list of movies
+//    private String toString(Movie s) {
+//        String hold = s.
+//
+//        return null;
+//    }
+
+    public static Object[] readdate(List<Movie> sent){//return arrayofmovies
+        Movie[] arr =new Movie[sent.size()];
+        for (Movie e:sent) {
+            arr[sent.indexOf(e)]=e;
+        }
+
+        return arr;
+    }
+
+    public List readdatelist(List<Movie> sent) throws FileNotFoundException { // return list of movies already in list
        return sent;}
+
+//    public  static void
+
+
+    public  static class compy implements Comparator<Movie>{
+
+        @Override
+        public int compare(Movie o1, Movie o2) {
+            return o1.year.compareTo(o2.year);
+
+
+        }
+    }
+    public  static class compr implements Comparator<Movie>{
+
+        @Override
+        public int compare(Movie o1, Movie o2) {
+            return Double.compare(o1.movrate, o2.movrate);
+
+
+        }
+    }
+
 
     public static void compyear() throws FileNotFoundException { //sort list by year
         List<Movie> fo = create();
@@ -164,22 +212,35 @@ public class Movie{ //MOvie class
 
 
     //ArrayList<T> movid,
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
+       // make();
         while (true) {
             Scanner input = new Scanner(System.in);
             System.out.println("What do you want?:" +
                     "1: compare year "+
                     "2: compare rating "+
-                    "3: compare search by rate "+
-                    "4: compare search by year "+
-                    "5: stop ")
+                    "3: search by rate "+
+                    "4: search by year "+
+                    "5: make file "+
+                    "6: stop loop")
             ;
             int choice = input.nextInt();
+
             if (choice == 1){
-                compyear();
+                List<Movie> hol = create();
+                hol.sort(new compy());
+                for (Movie o : hol) {
+                    o.print(o);
+                    //System.out.println("com");
+                }
             }
             else if (choice == 2) {
-                comprate();
+                List<Movie> hol = create();
+                hol.sort(new compr());
+                for (Movie o : hol) {
+                    o.print(o);
+                    //System.out.println("com");
+                }
             }
             else if (choice == 3) {
                 searchrate(create(),1.0);
@@ -189,6 +250,7 @@ public class Movie{ //MOvie class
                 }
             }
             else if (choice == 4) {
+
                 searchyear(create(),1);
                 for (Movie o : searchrate(create(),1)) {
                     o.print(o);
@@ -196,12 +258,15 @@ public class Movie{ //MOvie class
                 }
             }
             else if (choice == 5) {
+                make();
+            } else if (choice==6) {
                 break;
+
             }
-            for (Movie o : create()) {
-                o.print(o);
-                System.out.println("com");
-            }
+//            for (Movie o : create()) {
+//                o.print(o);
+//                System.out.println("com");
+//            }
         }
 
 
@@ -214,3 +279,4 @@ public class Movie{ //MOvie class
 
 
     }
+

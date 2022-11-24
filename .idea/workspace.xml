@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="94d27dec-b9ab-4626-8a8a-bab58983b107" name="Changes" comment="fin test">
-      <change afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/list.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ids.log" beforeDir="false" afterPath="$PROJECT_DIR$/ids.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/names.log" beforeDir="false" afterPath="$PROJECT_DIR$/names.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/year.log" beforeDir="false" afterPath="$PROJECT_DIR$/year.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
